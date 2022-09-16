@@ -3,3 +3,9 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+
+.glow:hover {
+
+  box-shadow: 0 0 30px rgba(82, 255, 168, .9);
+}
