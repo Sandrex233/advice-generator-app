@@ -1,3 +1,6 @@
+### Note: Advice is cached for 2 seconds. Any repeat-request within 2 seconds will return the same piece of advice.
+
+
 # Frontend Mentor - Advice generator app
 
 ![Design preview for the Advice generator app coding challenge](./design/desktop-preview.jpg)
