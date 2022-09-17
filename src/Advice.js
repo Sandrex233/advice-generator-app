@@ -32,7 +32,7 @@ const Advice = () => {
             <div className="pb-7 px-6">
                 <img src={Divider} alt="" />
             </div>
-            <button type="button" onClick={refreshPage} className="glow absolute r-[50px]  flex items-center justify-center top-[165px] z-10 bg-[#52FFA8] rounded-full w-16 h-16">
+            <button onClick={refreshPage} className="glow absolute r-[50px]  flex items-center justify-center top-[165px] z-10 bg-[#52FFA8] rounded-full w-16 h-16">
                 <img src={Dice} alt="" className="" />
             </button>
         </div >
