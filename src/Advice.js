@@ -9,8 +9,12 @@ const url = 'https://api.adviceslip.com/advice'
 const Advice = () => {
     const [data, setData] = useState(null);
 
-    function refreshPage() {
-        window.location.reload(false);
+    const makeRequest = () => {
+        axios.get(url).then((response) => {
+            setData(response.data)
+        }).catch((error) => {
+            console.log(error)
+        })
     }
 
     useEffect(() => {
@@ -32,7 +36,7 @@ const Advice = () => {
             <div className="pb-7 px-6">
                 <img src={Divider} alt="" />
             </div>
-            <button onClick={refreshPage} className="glow absolute r-[50px]  flex items-center justify-center top-[165px] z-10 bg-[#52FFA8] rounded-full w-16 h-16">
+            <button onClick={makeRequest} className="glow absolute r-[50px]  flex items-center justify-center top-[165px] z-10 bg-[#52FFA8] rounded-full w-16 h-16">
                 <img src={Dice} alt="" className="" />
             </button>
         </div >
